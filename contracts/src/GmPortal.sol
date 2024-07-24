@@ -24,9 +24,11 @@ contract GmPortal {
         emit NewGm(msg.sender, block.timestamp, _message);
         usersWhoGmd[msg.sender] = true;
     }
+    // 获取所有的用户
     function getAllGms() public view returns (Gm[] memory) {
         return gms;
     }
+    // 获取用户的总数
     function getTotalGms() public view returns (uint256) {
         console.log("We have %d total gms!", totalGms);
         return totalGms;

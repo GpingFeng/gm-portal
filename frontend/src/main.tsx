@@ -12,6 +12,7 @@ import { ChakraProvider } from '@chakra-ui/react'
 import { ColorModeScript } from "@chakra-ui/react";
 import theme from "./theme";
 
+// 链的ID、名称、网络名、原生货币信息、RPC URL和标记它为测试网的属性。
 const ethermintChain: Chain = {
   id: 1582,
   name: 'Bubs testnet',
